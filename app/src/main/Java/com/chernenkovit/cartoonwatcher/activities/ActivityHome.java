@@ -1,4 +1,4 @@
-package com.chernenkovit.watcher.activities;
+package com.chernenkovit.cartoonwatcher.activities;
 
 import android.content.Intent;
 import android.content.res.Configuration;
@@ -15,7 +15,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.chernenkovit.watcher.R;
+import com.chernenkovit.cartoonwatcher.R;
 import com.google.android.youtube.player.YouTubeApiServiceUtil;
 import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;

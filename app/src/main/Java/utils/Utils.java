@@ -5,7 +5,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.view.View;
 
-import com.chernenkovit.watcher.R;
+import com.chernenkovit.cartoonwatcher.R;
 import com.github.mrengineer13.snackbar.SnackBar;
 import com.google.android.gms.ads.AdView;
 

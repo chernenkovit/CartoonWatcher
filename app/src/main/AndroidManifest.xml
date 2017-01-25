@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.chernenkovit.watcher">
+    package="com.chernenkovit.cartoonwatcher">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
@@ -12,7 +12,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.ActivitySplash"
+        <activity android:name="com.chernenkovit.cartoonwatcher.activities.ActivitySplash"
             android:screenOrientation="portrait"
             android:noHistory="true"
             android:configChanges="orientation|keyboardHidden|screenSize">>
@@ -22,7 +22,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.ActivityHome"
+        <activity android:name="com.chernenkovit.cartoonwatcher.activities.ActivityHome"
             android:label="@string/new_videos"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
@@ -30,15 +30,15 @@
 
         </activity>
         <activity
-            android:name="com.chernenkovit.watcher.activities.ActivityAbout"
+            android:name="com.chernenkovit.cartoonwatcher.activities.ActivityAbout"
             android:label="@string/about"
-            android:parentActivityName="com.chernenkovit.watcher.activities.ActivityHome"
+            android:parentActivityName="com.chernenkovit.cartoonwatcher.activities.ActivityHome"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.chernenkovit.watcher.activities.ActivityHome" />
+                android:value="com.chernenkovit.cartoonwatcher.activities.ActivityHome" />
         </activity>
     </application>
 

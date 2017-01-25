@@ -1,4 +1,4 @@
-package com.chernenkovit.watcher.activities;
+package com.chernenkovit.cartoonwatcher.activities;
 
 import android.content.Intent;
 import android.os.AsyncTask;
@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
-import com.chernenkovit.watcher.R;
+import com.chernenkovit.cartoonwatcher.R;
 
 public class ActivitySplash extends AppCompatActivity {
 

@@ -20,7 +20,7 @@ import com.android.volley.NoConnectionError;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
-import com.chernenkovit.watcher.R;
+import com.chernenkovit.cartoonwatcher.R;
 import com.lsjwzh.widget.materialloadingprogressbar.CircleProgressBar;
 import com.marshalchen.ultimaterecyclerview.ItemTouchListenerAdapter;
 import com.marshalchen.ultimaterecyclerview.UltimateRecyclerView;

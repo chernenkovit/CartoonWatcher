@@ -1,4 +1,4 @@
-package com.chernenkovit.watcher;
+package com.chernenkovit.cartoonwatcher;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

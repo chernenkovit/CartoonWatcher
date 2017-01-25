@@ -12,7 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.android.volley.toolbox.ImageLoader;
-import com.chernenkovit.watcher.R;
+import com.chernenkovit.cartoonwatcher.R;
 import com.marshalchen.ultimaterecyclerview.UltimateRecyclerviewViewHolder;
 import com.marshalchen.ultimaterecyclerview.UltimateViewAdapter;
 import com.marshalchen.ultimaterecyclerview.animators.internal.ViewHelper;

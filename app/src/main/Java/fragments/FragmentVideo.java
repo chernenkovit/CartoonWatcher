@@ -2,7 +2,7 @@ package fragments;
 
 import android.os.Bundle;
 
-import com.chernenkovit.watcher.R;
+import com.chernenkovit.cartoonwatcher.R;
 import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerFragment;

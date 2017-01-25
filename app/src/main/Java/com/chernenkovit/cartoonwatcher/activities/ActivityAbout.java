@@ -1,11 +1,11 @@
-package com.chernenkovit.watcher.activities;
+package com.chernenkovit.cartoonwatcher.activities;
 
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 
-import com.chernenkovit.watcher.R;
+import com.chernenkovit.cartoonwatcher.R;
 import com.lb.material_preferences_library.PreferenceActivity;
 import com.lb.material_preferences_library.custom_preferences.Preference;
 

@@ -1,4 +1,4 @@
-package com.chernenkovit.watcher;
+package com.chernenkovit.cartoonwatcher;
 
 import org.junit.Test;
 
