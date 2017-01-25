@@ -2,7 +2,7 @@
     <string name="app_name">CartoonWatcher</string>
 
     <string name="youtube_apikey">AIzaSyAUzVcK2yeGkzXmvAYzKLA94edToT3FaoI</string>
-    <string name="googleplay_url">com.chernenkovit</string>
+    <string name="googleplay_url">com.chernenkovit.cartoonwatcher</string>
     <string name="banner_ad_id"></string>
     <string name="interstitial_ad_id"></string>
 
@@ -101,7 +101,7 @@
     <string name="pref_version_title">Версия сборки</string>
     <string name="pref_version_summary">1.0</string>
     <string name="pref_developer_title">Разработчик</string>
-    <string name="pref_developer_summary">chernenkovitApps</string>
+    <string name="pref_developer_summary">chernenkovit</string>
     <string name="pref_share_title">Поделитесь приложением</string>
     <string name="pref_share_summary">Расскажите друзьям об этом приложении</string>
     <string name="pref_rate_review_title">Поставьте оценку</string>
@@ -109,7 +109,7 @@
 
     <string name="share_to">Поделиться</string>
     <string name="subject">Рекомендую приложение</string>
-    <string name="message">Вы можете скачать приложение "Watcher" для Android в </string>
+    <string name="message">Вы можете скачать приложение "CartoonWatcher" для Android в </string>
 
     <string name="new_videos">Новые мультики</string>
 </resources>

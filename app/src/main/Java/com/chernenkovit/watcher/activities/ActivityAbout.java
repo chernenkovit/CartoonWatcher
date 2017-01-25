@@ -1,25 +1,24 @@
 package com.chernenkovit.watcher.activities;
 
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 
+import com.chernenkovit.watcher.R;
 import com.lb.material_preferences_library.PreferenceActivity;
 import com.lb.material_preferences_library.custom_preferences.Preference;
-
-import com.chernenkovit.watcher.R;
 
 public class ActivityAbout extends PreferenceActivity
         implements Preference.OnPreferenceClickListener {
 
     @Override
-    protected void onCreate(final Bundle savedInstanceState)
-    {
+    protected void onCreate(final Bundle savedInstanceState) {
 
         setTheme(R.style.AppTheme_Dark);
         super.onCreate(savedInstanceState);
 
-        Preference prefShareKey      = (Preference) findPreference(getString(R.string.pref_share_key));
+        Preference prefShareKey = (Preference) findPreference(getString(R.string.pref_share_key));
         Preference prefRateReviewKey = (Preference) findPreference(getString(R.string.pref_rate_review_key));
 
         prefShareKey.setOnPreferenceClickListener(this);
@@ -27,14 +26,13 @@ public class ActivityAbout extends PreferenceActivity
     }
 
     @Override
-    protected int getPreferencesXmlId()
-    {
+    protected int getPreferencesXmlId() {
         return R.xml.pref_about;
     }
 
     @Override
     public boolean onPreferenceClick(android.preference.Preference preference) {
-        if(preference.getKey().equals(getString(R.string.pref_share_key))) {
+        if (preference.getKey().equals(getString(R.string.pref_share_key))) {
             Intent shareIntent = new Intent(Intent.ACTION_SEND);
             shareIntent.setType("text/plain");
             shareIntent.putExtra(Intent.EXTRA_SUBJECT,
@@ -42,11 +40,15 @@ public class ActivityAbout extends PreferenceActivity
             shareIntent.putExtra(Intent.EXTRA_TEXT, getString(R.string.message) +
                     " " + getString(R.string.googleplay_url));
             startActivity(Intent.createChooser(shareIntent, getString(R.string.share_to)));
-        }else if(preference.getKey().equals(getString(R.string.pref_rate_review_key))) {
-            Intent rateReviewIntent = new Intent(Intent.ACTION_VIEW);
-            rateReviewIntent.setData(Uri.parse(
-                    getString(R.string.googleplay_url)));
-            startActivity(rateReviewIntent);
+        } else if (preference.getKey().equals(getString(R.string.pref_rate_review_key))) {
+            try {
+                Intent rateReviewIntent = new Intent(Intent.ACTION_VIEW);
+                rateReviewIntent.setData(Uri.parse(
+                        getString(R.string.googleplay_url)));
+                startActivity(rateReviewIntent);
+            } catch (ActivityNotFoundException e) {
+                e.printStackTrace();
+            }
         }
         return true;
     }
