@@ -43,6 +43,7 @@ public class ActivitySplash extends AppCompatActivity {
             super.onPostExecute(aVoid);
             Intent intent = new Intent(getApplicationContext(), ActivityHome.class);
             startActivity(intent);
+            overridePendingTransition(R.anim.open_next,R.anim.close_main);
         }
     }
 

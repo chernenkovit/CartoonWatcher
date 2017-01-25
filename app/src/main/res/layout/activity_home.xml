@@ -18,7 +18,14 @@
             android:layout_height="match_parent"
             android:id="@+id/frame_container">
 
+            <fragment
+                class="fragments.FragmentVideo"
+                android:id="@+id/video_fragment_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
             <FrameLayout
+                android:layout_below="@id/video_fragment_container"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/fragment_container">

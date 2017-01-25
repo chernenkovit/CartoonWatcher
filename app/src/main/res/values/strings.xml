@@ -1,15 +1,24 @@
 <resources>
-    <string name="app_name">Watcher</string>
+    <string name="app_name">CartoonWatcher</string>
 
-    <string name="youtube_apikey"></string>
-    <string name="googleplay_url"></string>
+    <string name="youtube_apikey">AIzaSyAUzVcK2yeGkzXmvAYzKLA94edToT3FaoI</string>
+    <string name="googleplay_url">com.chernenkovit</string>
     <string name="banner_ad_id"></string>
     <string name="interstitial_ad_id"></string>
 
     <string-array name="channel_names">
-        <item>New Video</item>
+        <item>Lego Channel</item>
+        <item>Щенячий патруль</item>
         <item>Lego Ninjago</item>
         <item>Lego Knights</item>
+        <item>Пеппа</item>
+        <item>Вспыш</item>
+        <item>Машинки</item>
+        <item>Маша и медведь</item>
+        <item>Робокар Поли</item>
+        <item>Доктор Машинкова</item>
+        <item>Фиксики</item>
+        <item>Барашек Шон</item>
         <item>Dragons</item>
         <item>Песни</item>
         <item>Вся правда о медведях</item>
@@ -18,6 +27,15 @@
 
     <string-array name="video_types">
         <item>1</item>
+        <item>1</item>
+        <item>2</item>
+        <item>2</item>
+        <item>2</item>
+        <item>2</item>
+        <item>2</item>
+        <item>2</item>
+        <item>2</item>
+        <item>2</item>
         <item>2</item>
         <item>2</item>
         <item>2</item>
@@ -27,9 +45,18 @@
     </string-array>
 
     <string-array name="channel_id">
-        <item>UCKTDayZg3-A55GqMy7h3BDQ</item>
+        <item>UCd18_pjSc231Act6-BMPTPQ</item>
+        <item>UCMXsY5roAoEK1tG7mzyGz4w</item>
         <item>PLpyVZMZqBhDjMns1x6yawGetAaCWllDin</item>
         <item>PLpyVZMZqBhDiqhXYNTmLRkyg730uiPwf-</item>
+        <item>PLU4URteerUWD5QOk0RPpsfhzvjm75JjS_</item>
+        <item>PLD-by8qH2-ONraJaKlRulYYs7il4ATIOu</item>
+        <item>PL1HIp83QRJHTg0hGqiw-4UbnIutpv4Eju</item>
+        <item>PLXnIohISHNIsb2KflqESk0nZW6TfDlvz-</item>
+        <item>PLYjQr8vff1JxVFosdrrs8q_MgAvcMhNLD</item>
+        <item>PL-x5vYSEDfj7qzkrPdm1ikLitleoONtM2</item>
+        <item>PL1HIp83QRJHQB13GYB2NexUvqaklZM9pl</item>
+        <item>PL84WPPvu0XyFGHmfTy6PLK1gLk1wHaJ7g</item>
         <item>PLpyVZMZqBhDgdFVECQVE0NDBG7qQH93y7</item>
         <item>PLpyVZMZqBhDgjCX-ujyxg7Sk4DArZ_BYW</item>
         <item>PLpyVZMZqBhDgu9Cko43ByBf9fcw3_wCh6</item>
