@@ -1,4 +1,4 @@
-package utils;
+package com.chernenkovit.cartoonwatcher.utils;
 
 import android.content.Context;
 import android.graphics.Bitmap;

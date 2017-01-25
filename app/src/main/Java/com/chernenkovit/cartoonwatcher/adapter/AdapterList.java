@@ -1,4 +1,4 @@
-package adapter;
+package com.chernenkovit.cartoonwatcher.adapter;
 
 import android.animation.Animator;
 import android.content.Context;
@@ -13,15 +13,14 @@ import android.widget.TextView;
 
 import com.android.volley.toolbox.ImageLoader;
 import com.chernenkovit.cartoonwatcher.R;
+import com.chernenkovit.cartoonwatcher.utils.RequestQueueSingleton;
+import com.chernenkovit.cartoonwatcher.utils.Utils;
 import com.marshalchen.ultimaterecyclerview.UltimateRecyclerviewViewHolder;
 import com.marshalchen.ultimaterecyclerview.UltimateViewAdapter;
 import com.marshalchen.ultimaterecyclerview.animators.internal.ViewHelper;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-
-import utils.RequestQueueSingleton;
-import utils.Utils;
 
 public class AdapterList extends UltimateViewAdapter<RecyclerView.ViewHolder>{
     private final ArrayList<HashMap<String, String>> DATA;
@@ -42,7 +41,7 @@ public class AdapterList extends UltimateViewAdapter<RecyclerView.ViewHolder>{
 
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent) {
-        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.adapter_video_list, parent, false);
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_video_list, parent, false);
         return new ViewHolder(v);
     }
 

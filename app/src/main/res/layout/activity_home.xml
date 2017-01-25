@@ -19,7 +19,7 @@
             android:id="@+id/frame_container">
 
             <fragment
-                class="fragments.FragmentVideo"
+                class="com.chernenkovit.cartoonwatcher.fragments.FragmentVideo"
                 android:id="@+id/video_fragment_container"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>

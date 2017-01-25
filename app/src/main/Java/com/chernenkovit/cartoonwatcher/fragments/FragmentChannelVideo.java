@@ -1,4 +1,4 @@
-package fragments;
+package com.chernenkovit.cartoonwatcher.fragments;
 
 
 import android.app.Activity;
@@ -32,9 +32,9 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import adapter.AdapterList;
-import utils.RequestQueueSingleton;
-import utils.Utils;
+import com.chernenkovit.cartoonwatcher.adapter.AdapterList;
+import com.chernenkovit.cartoonwatcher.utils.RequestQueueSingleton;
+import com.chernenkovit.cartoonwatcher.utils.Utils;
 
 public class FragmentChannelVideo extends Fragment implements View.OnClickListener {
 

@@ -1,4 +1,4 @@
-package utils;
+package com.chernenkovit.cartoonwatcher.utils;
 
 
 import android.app.Activity;

@@ -1,4 +1,4 @@
-package fragments;
+package com.chernenkovit.cartoonwatcher.fragments;
 
 import android.os.Bundle;
 

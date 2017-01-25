@@ -27,9 +27,9 @@ import com.mikepenz.materialdrawer.model.PrimaryDrawerItem;
 import com.mikepenz.materialdrawer.model.SecondaryDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 
-import fragments.FragmentChannelVideo;
-import fragments.FragmentVideo;
-import utils.Utils;
+import com.chernenkovit.cartoonwatcher.fragments.FragmentChannelVideo;
+import com.chernenkovit.cartoonwatcher.fragments.FragmentVideo;
+import com.chernenkovit.cartoonwatcher.utils.Utils;
 
 import static android.view.ViewGroup.LayoutParams.MATCH_PARENT;
 import static android.view.ViewGroup.LayoutParams.WRAP_CONTENT;
