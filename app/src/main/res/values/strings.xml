@@ -3,8 +3,6 @@
 
     <string name="youtube_apikey">AIzaSyAUzVcK2yeGkzXmvAYzKLA94edToT3FaoI</string>
     <string name="googleplay_url">com.chernenkovit.cartoonwatcher</string>
-    <string name="banner_ad_id"></string>
-    <string name="interstitial_ad_id"></string>
 
     <string-array name="channel_names">
         <item>Lego Channel</item>
@@ -19,6 +17,7 @@
         <item>Доктор Машинкова</item>
         <item>Фиксики</item>
         <item>Барашек Шон</item>
+        <item>Суперкрылья</item>
         <item>Dragons</item>
         <item>Песни</item>
         <item>Вся правда о медведях</item>
@@ -28,6 +27,7 @@
     <string-array name="video_types">
         <item>1</item>
         <item>1</item>
+        <item>2</item>
         <item>2</item>
         <item>2</item>
         <item>2</item>
@@ -57,6 +57,7 @@
         <item>PL-x5vYSEDfj7qzkrPdm1ikLitleoONtM2</item>
         <item>PL1HIp83QRJHQB13GYB2NexUvqaklZM9pl</item>
         <item>PL84WPPvu0XyFGHmfTy6PLK1gLk1wHaJ7g</item>
+        <item>PLLHW3WYzhgYKjoybKsDoqOhKCxgtttxdD</item>
         <item>PLpyVZMZqBhDgdFVECQVE0NDBG7qQH93y7</item>
         <item>PLpyVZMZqBhDgjCX-ujyxg7Sk4DArZ_BYW</item>
         <item>PLpyVZMZqBhDgu9Cko43ByBf9fcw3_wCh6</item>
@@ -97,7 +98,7 @@
     <string name="pref_rate_review_key">prefRateReviewKey</string>
 
     <string name="pref_app_title">О приложении</string>
-    <string name="pref_app_summary">Мультики</string>
+    <string name="pref_app_summary">CartoonWatcher</string>
     <string name="pref_version_title">Версия сборки</string>
     <string name="pref_version_summary">1.0</string>
     <string name="pref_developer_title">Разработчик</string>

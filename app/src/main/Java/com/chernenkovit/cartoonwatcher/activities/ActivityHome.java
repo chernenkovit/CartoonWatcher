@@ -16,6 +16,9 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.chernenkovit.cartoonwatcher.R;
+import com.chernenkovit.cartoonwatcher.fragments.FragmentChannelVideo;
+import com.chernenkovit.cartoonwatcher.fragments.FragmentVideo;
+import com.chernenkovit.cartoonwatcher.utils.Utils;
 import com.google.android.youtube.player.YouTubeApiServiceUtil;
 import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
@@ -27,16 +30,12 @@ import com.mikepenz.materialdrawer.model.PrimaryDrawerItem;
 import com.mikepenz.materialdrawer.model.SecondaryDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 
-import com.chernenkovit.cartoonwatcher.fragments.FragmentChannelVideo;
-import com.chernenkovit.cartoonwatcher.fragments.FragmentVideo;
-import com.chernenkovit.cartoonwatcher.utils.Utils;
-
 import static android.view.ViewGroup.LayoutParams.MATCH_PARENT;
 import static android.view.ViewGroup.LayoutParams.WRAP_CONTENT;
 
 
 public final class ActivityHome extends AppCompatActivity implements YouTubePlayer.OnFullscreenListener,
-        FragmentChannelVideo.OnVideoSelectedListener {
+        FragmentChannelVideo.OnVideoSelectedListener{
 
     private static final int LANDSCAPE_VIDEO_PADDING_DP = 5;
     private static final int RECOVERY_DIALOG_REQUEST = 1;
@@ -89,7 +88,7 @@ public final class ActivityHome extends AppCompatActivity implements YouTubePlay
                 .withHeaderBackground(R.mipmap.ic_launcher)
                 .withHeaderBackgroundScaleType(ImageView.ScaleType.FIT_CENTER)
                 .withCompactStyle(true)
-                        .build();
+                .build();
 
         drawer = new DrawerBuilder(this)
                 .withActivity(ActivityHome.this)
@@ -114,15 +113,15 @@ public final class ActivityHome extends AppCompatActivity implements YouTubePlay
                             if (drawerItem.getIdentifier() >= 0 && selectedDrawerItem != -1) {
 
                                 setToolbarAndSelectedDrawerItem(
-                                        channelNames[selectedDrawerItem - 1],
-                                        (selectedDrawerItem - 1)
+                                        channelNames[selectedDrawerItem-1],
+                                        (selectedDrawerItem-1)
                                 );
 
                                 Bundle bundle = new Bundle();
                                 bundle.putString(Utils.TAG_VIDEO_TYPE,
-                                        videoTypes[selectedDrawerItem - 1]);
+                                        videoTypes[selectedDrawerItem-1]);
                                 bundle.putString(Utils.TAG_CHANNEL_ID,
-                                        channelId[selectedDrawerItem - 1]);
+                                        channelId[selectedDrawerItem-1]);
 
                                 fragment = new FragmentChannelVideo();
                                 fragment.setArguments(bundle);
@@ -193,17 +192,17 @@ public final class ActivityHome extends AppCompatActivity implements YouTubePlay
         }
     }
 
-    private void setToolbarAndSelectedDrawerItem(String title, int selectedDrawerItem) {
+    private void setToolbarAndSelectedDrawerItem(String title, int selectedDrawerItem){
         toolbar.setTitle(title);
         drawer.setSelection(selectedDrawerItem, false);
     }
 
-    private void updateTitleAndDrawer(Fragment mFragment) {
+    private void updateTitleAndDrawer (Fragment mFragment){
         String fragClassName = mFragment.getClass().getName();
 
-        if (fragClassName.equals(FragmentChannelVideo.class.getName())) {
-            setToolbarAndSelectedDrawerItem(channelNames[selectedDrawerItem],
-                    (selectedDrawerItem));
+        if (fragClassName.equals(FragmentChannelVideo.class.getName())){
+            setToolbarAndSelectedDrawerItem(channelNames[selectedDrawerItem ],
+                    (selectedDrawerItem ));
         }
     }
 
@@ -296,9 +295,9 @@ public final class ActivityHome extends AppCompatActivity implements YouTubePlay
 
     @Override
     public void onBackPressed() {
-        if (isFullscreen) {
+        if (isFullscreen){
             fragmentVideo.backnormal();
-        } else {
+        } else{
             super.onBackPressed();
         }
     }

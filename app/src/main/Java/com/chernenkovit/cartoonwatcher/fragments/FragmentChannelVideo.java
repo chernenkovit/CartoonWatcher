@@ -1,6 +1,5 @@
 package com.chernenkovit.cartoonwatcher.fragments;
 
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
@@ -21,6 +20,9 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.chernenkovit.cartoonwatcher.R;
+import com.chernenkovit.cartoonwatcher.adapter.AdapterList;
+import com.chernenkovit.cartoonwatcher.utils.RequestQueueSingleton;
+import com.chernenkovit.cartoonwatcher.utils.Utils;
 import com.lsjwzh.widget.materialloadingprogressbar.CircleProgressBar;
 import com.marshalchen.ultimaterecyclerview.ItemTouchListenerAdapter;
 import com.marshalchen.ultimaterecyclerview.UltimateRecyclerView;
@@ -31,10 +33,6 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-
-import com.chernenkovit.cartoonwatcher.adapter.AdapterList;
-import com.chernenkovit.cartoonwatcher.utils.RequestQueueSingleton;
-import com.chernenkovit.cartoonwatcher.utils.Utils;
 
 public class FragmentChannelVideo extends Fragment implements View.OnClickListener {
 
