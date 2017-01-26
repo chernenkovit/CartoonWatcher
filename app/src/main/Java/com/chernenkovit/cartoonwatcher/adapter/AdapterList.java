@@ -22,6 +22,7 @@ import com.marshalchen.ultimaterecyclerview.animators.internal.ViewHelper;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+/** Custom adapter for video data presenting. */
 public class AdapterList extends UltimateViewAdapter<RecyclerView.ViewHolder>{
     private final ArrayList<HashMap<String, String>> DATA;
     private final ImageLoader imageLoader;

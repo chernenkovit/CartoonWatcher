@@ -33,7 +33,7 @@ import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 import static android.view.ViewGroup.LayoutParams.MATCH_PARENT;
 import static android.view.ViewGroup.LayoutParams.WRAP_CONTENT;
 
-
+/** Main activity class with fragments management and navigation drawer implementation. */
 public final class ActivityHome extends AppCompatActivity implements YouTubePlayer.OnFullscreenListener,
         FragmentChannelVideo.OnVideoSelectedListener{
 

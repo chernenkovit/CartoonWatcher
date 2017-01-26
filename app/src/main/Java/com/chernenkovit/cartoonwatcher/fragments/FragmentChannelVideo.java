@@ -34,6 +34,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+/** Fragment with list of videos and data receiving implementation. */
 public class FragmentChannelVideo extends Fragment implements View.OnClickListener {
 
 
@@ -293,7 +294,7 @@ public class FragmentChannelVideo extends Fragment implements View.OnClickListen
                                 }
 
                             } catch (JSONException e) {
-                                Log.d(Utils.TAG_FANDROID + TAG, "JSON Parsing error: " +
+                                Log.d(Utils.TAG_CHERNENKOVIT + TAG, "JSON Parsing error: " +
                                         e.getMessage());
                                 mPrgLoading.setVisibility(View.GONE);
                             }
@@ -308,7 +309,7 @@ public class FragmentChannelVideo extends Fragment implements View.OnClickListen
                     public void onErrorResponse(VolleyError error) {
                         Activity activity = getActivity();
                         if(activity != null && isAdded()){
-                            Log.d(Utils.TAG_FANDROID + TAG, "on Error Response: " + error.getMessage());
+                            Log.d(Utils.TAG_CHERNENKOVIT + TAG, "on Error Response: " + error.getMessage());
                             try {
                                 String msgSnackBar;
                                 if (error instanceof NoConnectionError) {
@@ -329,7 +330,7 @@ public class FragmentChannelVideo extends Fragment implements View.OnClickListen
                                 mPrgLoading.setVisibility(View.GONE);
 
                             } catch (Exception e) {
-                                Log.d(Utils.TAG_FANDROID + TAG, "failed catch volley " + e.toString());
+                                Log.d(Utils.TAG_CHERNENKOVIT + TAG, "failed catch volley " + e.toString());
                                 mPrgLoading.setVisibility(View.GONE);
                             }
                         }
@@ -404,7 +405,7 @@ public class FragmentChannelVideo extends Fragment implements View.OnClickListen
                                 }
 
                             } catch (JSONException e) {
-                                Log.d(Utils.TAG_FANDROID + TAG,
+                                Log.d(Utils.TAG_CHERNENKOVIT + TAG,
                                         "JSON Parsing error: " + e.getMessage());
                                 mPrgLoading.setVisibility(View.GONE);
                             }
@@ -419,7 +420,7 @@ public class FragmentChannelVideo extends Fragment implements View.OnClickListen
                     public void onErrorResponse(VolleyError error) {
                         Activity activity = getActivity();
                         if(activity != null && isAdded()){
-                            Log.d(Utils.TAG_FANDROID + TAG, "on Error Response: " + error.getMessage());
+                            Log.d(Utils.TAG_CHERNENKOVIT + TAG, "on Error Response: " + error.getMessage());
                             try {
                                 String msgSnackBar;
                                 if (error instanceof NoConnectionError) {
@@ -436,7 +437,7 @@ public class FragmentChannelVideo extends Fragment implements View.OnClickListen
                                 mPrgLoading.setVisibility(View.GONE);
 
                             } catch (Exception e) {
-                                Log.d(Utils.TAG_FANDROID + TAG, "failed catch volley " + e.toString());
+                                Log.d(Utils.TAG_CHERNENKOVIT + TAG, "failed catch volley " + e.toString());
                                 mPrgLoading.setVisibility(View.GONE);
                             }
                         }

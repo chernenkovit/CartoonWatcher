@@ -7,6 +7,7 @@ import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerFragment;
 
+/** Fragment with Youtube player implementation. */
 public class FragmentVideo extends YouTubePlayerFragment implements YouTubePlayer.OnInitializedListener {
 
     private YouTubePlayer player;

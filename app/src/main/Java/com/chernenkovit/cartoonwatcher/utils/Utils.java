@@ -3,11 +3,9 @@ package com.chernenkovit.cartoonwatcher.utils;
 
 import android.app.Activity;
 import android.content.Context;
-import android.view.View;
 
 import com.chernenkovit.cartoonwatcher.R;
 import com.github.mrengineer13.snackbar.SnackBar;
-import com.google.android.gms.ads.AdView;
 
 import java.text.DateFormat;
 import java.text.ParseException;
@@ -15,6 +13,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
+/** Utilities class. */
 public class Utils {
     public static final String API_YOUTUBE  = "https://www.googleapis.com/youtube/v3/";
 
@@ -57,22 +56,10 @@ public class Utils {
 
     public static final Integer ARG_TIMEOUT_MS  = 4000;
 
-    public static final String TAG_FANDROID = "Fandroid:";
+    public static final String TAG_CHERNENKOVIT = "Chernenkovit:";
 
     public static final String TAG_CHANNEL_ID  = "channel_id";
     public static final String TAG_VIDEO_TYPE  = "video_type";
-
-
-    // Method to check admob visibility
-    public static boolean admobVisibility(AdView ad, boolean isInDebugMode){
-        if(isInDebugMode) {
-            ad.setVisibility(View.VISIBLE);
-            return true;
-        }else {
-            ad.setVisibility(View.GONE);
-            return false;
-        }
-    }
 
 
     public static void showSnackBar(Activity activity, String message){

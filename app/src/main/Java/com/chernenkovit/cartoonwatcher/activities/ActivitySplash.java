@@ -11,6 +11,7 @@ import android.view.WindowManager;
 
 import com.chernenkovit.cartoonwatcher.R;
 
+/** Activity class for splash screen implementation. */
 public class ActivitySplash extends AppCompatActivity {
 
     @Override
@@ -30,7 +31,7 @@ public class ActivitySplash extends AppCompatActivity {
         protected Void doInBackground(Void... voids) {
 
             try {
-                Thread.sleep(2000);
+                Thread.sleep(1000);
             }catch (InterruptedException ie){
                 ie.printStackTrace();
             }

@@ -9,6 +9,7 @@ import com.chernenkovit.cartoonwatcher.R;
 import com.lb.material_preferences_library.PreferenceActivity;
 import com.lb.material_preferences_library.custom_preferences.Preference;
 
+/** Activity class with information about application. */
 public class ActivityAbout extends PreferenceActivity
         implements Preference.OnPreferenceClickListener {
 
